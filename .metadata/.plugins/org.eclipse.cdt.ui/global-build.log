@@ -1,5 +1,1 @@
-21:44:23 **** Incremental Build of configuration Debug for project hello world ****
-Info: Internal Builder is used for build
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src/hello world.o" "../src/hello world.cpp" 
-g++ -o "hello world" "src/hello world.o" 
 Info: Nothing to build for hello world
