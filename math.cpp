@@ -1,10 +1,15 @@
 #include "math.h"
-
-int ajouteDeux(int nombreRecu)
+#include <iostream>
+using namespace std;
+int moyenne(int nombreRecu[],int taille)
 {
-    int valeur(nombreRecu + 2);
-
-    return valeur;
+	int tot=0;
+    for (int i=0;i<taille;i++){
+    	cout << nombreRecu[i] << endl;
+    	tot+=nombreRecu[i];
+    }
+    tot=tot/taille;
+    return tot;
 }
 
 

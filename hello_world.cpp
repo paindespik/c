@@ -5,12 +5,14 @@ using namespace std;
 
 int main()
 {
-    int a(2),b(2);
-    cout << "Valeur de a : " << a << endl;
-    cout << "Valeur de b : " << b << endl;
-    b = ajouteDeux(a);                     //Appel de la fonction
-    cout << "Valeur de a : " << a << endl;
-    cout << "Valeur de b : " << b << endl;
-
+	int beuleu[5];
+	beuleu[0]=1;
+	beuleu[1]=2;
+	beuleu[2]=3;
+	beuleu[3]=4;
+	beuleu[4]=5;
+	int taille=sizeof(beuleu)/sizeof(int);
+	int moyenne1= moyenne(beuleu,taille);
+	cout <<  "la moyenne est " << moyenne1 << endl;
     return 0;
 }
