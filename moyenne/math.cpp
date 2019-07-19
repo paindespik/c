@@ -1,14 +1,15 @@
 #include "math.h"
 #include <iostream>
+#include <vector>
 using namespace std;
-int moyenne(int nombreRecu[],int taille)
+double moyenne(vector<double> nombreRecu)
 {
-	int tot=0;
-    for (int i=0;i<taille;i++){
+	double tot=0;
+    for (int i=0;i<nombreRecu.size();i++){
     	cout << nombreRecu[i] << endl;
     	tot+=nombreRecu[i];
     }
-    tot=tot/taille;
+    tot=tot/nombreRecu.size();
     return tot;
 }
 
