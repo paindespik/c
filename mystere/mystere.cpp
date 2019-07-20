@@ -10,7 +10,7 @@ int main(){
 
 	cin >> mystere;
 	
-	cout <<"merde"<<endl;
+	cout <<"beuleu"<<endl;
 	//tab.push_back(mystere.c_str());
 	cout <<mystere<< endl; 
 
