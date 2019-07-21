@@ -1,1 +1,20 @@
-Info: Nothing to build for hello world
+13:55:00 **** Incremental Build of configuration Debug for project mystere2 ****
+make all 
+Building file: ../src/melanger.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/melanger.d" -MT"src/melanger.o" -o "src/melanger.o" "../src/melanger.cpp"
+Finished building: ../src/melanger.cpp
+ 
+Building file: ../src/mystere2.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/mystere2.d" -MT"src/mystere2.o" -o "src/mystere2.o" "../src/mystere2.cpp"
+Finished building: ../src/mystere2.cpp
+ 
+Building target: mystere2
+Invoking: GCC C++ Linker
+g++  -o "mystere2"  ./src/melanger.o ./src/mystere2.o   
+Finished building target: mystere2
+ 
+13:55:14 **** Incremental Build of configuration Debug for project mystere2 ****
+make all 
+make: rien à faire pour « all ».

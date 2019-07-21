@@ -10,7 +10,7 @@ int main()
 
    vector<double> notes; //Un tableau vide
 
-ifstream monFlux("/home/driard/c++/notes.txt");
+ifstream monFlux("/home/driard/c++/moyenne/notes.txt");
 string ligne;
 if (monFlux){
 	while(getline(monFlux,ligne)){
