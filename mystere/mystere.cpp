@@ -15,6 +15,7 @@ int main() {
 			tab_mot.push_back(mot);
 		}
 	}
+	
 	srand(time(0));
 	mot=tab_mot[rand()%tab_mot.size()];
 
