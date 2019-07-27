@@ -10,6 +10,7 @@ public:
 	Duree(int heures,  int minutes, int secondes);
 	int tempsSecondes();
 	void afficher() const;
+	bool estEgal(Duree const& b) const;
 
 
 private:
@@ -17,5 +18,6 @@ private:
 	int nb_minutes;
 	int nb_secondes;
 };
+bool operator==(Duree const& a, Duree const& b);
 
 #endif

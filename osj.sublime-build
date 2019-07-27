@@ -1,0 +1,12 @@
+{
+  "cmd" : ["g++ *.cpp -o executablename"],
+  "shell":true,
+  
+  "variants":
+    [
+        {
+            "name": "Run",
+            "cmd": ["gnome-terminal -e 'bash -c \"./executablename;echo;echo;  echo Press ENTER to continue; read line;exit; exec bash\"'"]
+        }
+    ]
+}
