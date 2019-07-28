@@ -1,4 +1,5 @@
 #include "duree.h"
+#include "additionner.h"
 #include <iostream>
 using namespace std;
 
@@ -38,7 +39,56 @@ bool Duree::estEgal(Duree const& b) const
         return false;
 }
 
+bool Duree::estInf(Duree const& b) const{
+	if(nb_heures< b.nb_heures){
+		return true;
+	}
+	else if (nb_heures==b.nb_heures){
+		if(nb_minutes<b.nb_minutes){
+			return true;
+		}
+		else if (nb_minutes==b.nb_minutes){
+			if (nb_secondes<b.nb_secondes){
+				return true;
+			}
+			else{
+				return false;
+			}
+		}
+		else{
+			return false;
+		}
+	}
+	else{
+		return false;
+	}
+}
+
+void Duree::afficher (ostream &flux) const{
+	 flux << nb_heures << "h" << nb_minutes << "m" << nb_secondes << "s";
+}
+
+
 
  bool operator==(Duree const& a, Duree const& b){
  	return a.estEgal(b);
  }
+
+ bool operator!=(Duree const& a, Duree const& b){
+ 	if (a.estEgal(b)){
+ 		return false;
+ 	}
+ 	return true;
+ }
+ bool operator<(Duree const& a, Duree const& b){
+ 	return a.estInf(b);
+ }
+
+ Duree operator+(Duree const& a, Duree const& b){
+ 	return Additionner(a,b);
+ }
+
+ ostream &operator<<(ostream &flux, Duree const& duree){
+	duree.afficher(flux);
+	return flux;
+}

@@ -8,3 +8,4 @@ Duree Additionner(Duree temps1, Duree temps2){
 	Duree tot(nb_secondes);
 	return tot;
 }
+
