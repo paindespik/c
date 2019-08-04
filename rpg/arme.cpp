@@ -16,3 +16,7 @@ void Arme::afficher() const{
 	cout << "degats : " << m_degats << endl;
 }
 
+int Arme::getDegats(){
+	return m_degats;
+}
+

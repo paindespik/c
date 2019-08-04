@@ -8,11 +8,15 @@ class Arme{
 		Arme(std::string nom, int degats);
 		void changerArme();
 		void afficher() const;
+		int getDegats();
+		
 
 	private:
 		int m_degats;
 		std::string m_nom;
 
 };
+
+
 
 #endif
