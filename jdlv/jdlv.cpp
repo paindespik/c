@@ -9,16 +9,16 @@
 #include <thread>
 using namespace std;
 
-const int largeur=35;
-const int longueur=35;
-int nb_vivant=150;
+const int largeur=37;
+const int longueur=40;
+int nb_vivant=15;
 int main()
 {
 	vector<vector<bool>> tab;
 	
-	tab=initialiser(tab,nb_vivant, largeur, longueur);
+	tab=initialiser(tab,nb_vivant, longueur, largeur);
 	int i(0), j(0), k(0);
-
+	
 	affichage(tab);
 	while(nb_vivant>0){
 		tab=prochain_tour(tab);

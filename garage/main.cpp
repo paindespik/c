@@ -7,7 +7,6 @@ using namespace std;
 #include "garage.h"
 #include <iostream>
 #include <vector>
-
 void presenter(Vehicule const& a){
 	a.affiche();
 }
